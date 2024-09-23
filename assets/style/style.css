@@ -224,6 +224,19 @@ body {
 /* Media queries per mobile */
 @media (max-width: 767px) {
 
+.header-inner {
+    padding: 0 10px;
+}
+
+#navigation {
+    top: 10px;
+    left: 35%;
+}
+
+.nav-links {
+margin-left: -47%;
+}
+
 .nav-links a{
     font-family: 'D-DIN-Bold', Arial, Verdana, sans-serif;
     font-size: 12px; 
