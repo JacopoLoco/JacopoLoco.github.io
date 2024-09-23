@@ -1,0 +1,153 @@
+
+@colore-nero: black;
+@colore-bianco: #fff;
+@font-din: 'D-DIN-Regular', Arial, Verdana, sans-serif;
+@font-din-bold: 'D-DIN-Bold', Arial, Verdana, sans-serif;
+@font-times: 'Times New Roman', Times, serif;
+@z-index-header: 100;
+@larghezza-max: 1400px;
+
+.border-radius(@radius) {
+  border-radius: @radius;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: @colore-nero !important;
+  font: 16px/26px @font-din;
+  color: @colore-bianco;
+  width: 100%;
+}
+
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: @z-index-header;
+  width: 100%;
+  height: 100px;
+}
+
+.header-inner {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: @larghezza-max;
+  margin: 0 auto;
+}
+
+#navigation {
+  position: absolute;
+  top: 38px;
+  height: 30px;
+  left: 38.5%;
+}
+
+.nav-links {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin: 0 12px;
+    font-size: 7%;
+
+    a {
+      display: block;
+      font: 14px/28px @font-din-bold;
+      color: @colore-bianco;
+      text-transform: uppercase;
+      transition: color .25s ease;
+      text-decoration: none;
+
+      &:hover {
+        color: lighten(@colore-bianco, 10%);
+      }
+    }
+  }
+}
+
+.image-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+
+  .responsive-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+
+#footer {
+  background: @colore-nero;
+  text-align: center;
+  font: 12px/18px @font-din-bold;
+  color: #979797;
+  padding: 20px 0;
+
+  span {
+    font-size: 12px;
+    margin: 0 20px;
+  }
+
+  a {
+    font: 12px/24px @font-din-bold;
+    color: @colore-bianco;
+  }
+}
+
+.contact-form {
+  background-color: @colore-nero;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  margin-left: 37%;
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: @colore-bianco;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: @colore-bianco;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: @colore-bianco;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-inner {
+    padding: 0 10px;
+  }
+
+  #navigation {
+    top: 10px;
+    left: 35%;
+  }
+
+  .nav-links {
+    margin-left: -47%;
+  }
+}
