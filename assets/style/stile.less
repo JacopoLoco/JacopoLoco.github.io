@@ -147,10 +147,33 @@ body {
 
   #navigation {
     margin-top: 0%;
-    left: 35%;
+    left: 2.5%;
   }
+  
+.nav-links {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 
-  .nav-links {
-    margin-left: -45%;
+  li {
+    position: relative;
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 5%;
+
+    a {
+      display: block;
+      font: 14px/28px @font-din-bold;
+      color: @colore-bianco;
+      text-transform: uppercase;
+      transition: color .25s ease;
+      text-decoration: none;
+
+      &:hover {
+        color: lighten(@colore-bianco, 10%);
+      }
+    }
   }
+}
 }
