@@ -155,7 +155,22 @@ body {
     
 }
 
+.inner-social{
+    position: absolute;
+    top: 15%;
+    right: 17%;
+    width: 90%;
+    max-width: 960px;
+    text-align: center;        
+    font-size:130%;
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
 
+.contact-form {
+  margin-left: 37%;
+}
 
 .inner-project{
     margin-left: -29%;
@@ -268,6 +283,22 @@ margin-left: -47%;
     z-index: 2;
 }
 
+.inner-social{
+    position: absolute;
+    top: 12%;
+    right: 3%;
+    width: 90%;
+    text-align: center;   
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.inner-social h1{
+     
+    font-size:250%;
+}
+
 .inner-center h1 {
     line-height: 1; 
 }
@@ -318,41 +349,40 @@ h3{
 
 .inner-right{
     position: absolute;
-    top: 5%;
+    top: 10%;
     width: 47%;
     left: 5%;
     max-width: 960px;
     z-index: 2; 
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size:100%;
+    font-size:120%;
     color: white;
 }
 
-
 .inner-right2{
     position: absolute;
-    top: 13%;
+    top: 17%;
     left: 7%;
     width: 47%;
     max-width: 960px;
     z-index: 2; 
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size:100%;
+    font-size:130%;
 }
 
 .inner-right3{
 
     position: absolute;
-    top: 7%;
+    top: 10%;
     left: 7%;
     width: 56%;
     max-width: 960px;
     z-index: 2; 
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size:100%;
+    font-size:130%;
     color: white;
 }
 
@@ -379,7 +409,7 @@ p {
 
 .inner-centerCV{
     position: absolute;
-    top: 4%;
+    top: 9%;
     right: 3%;
     width: 90%;
     max-width: 960px;
@@ -392,17 +422,20 @@ p {
 
 .inner-left{
     position: absolute;
-    top: 15%;
-    left: 50%;
+    top: 19%;
+    left: 47%;
     width: 50%;
     max-width: 960px;
     color: black;       
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size:100%;
+    font-size:120%;
     
 }
 
+.inner-left h2 {
+    color: white;
+}
 .inner-project{
     position: absolute;
     top: 20%;
@@ -437,8 +470,8 @@ p {
 
 .social {
     position: absolute;
-    top: 25%;
-    left: 10%; 
+    top: 30%;
+    left: 17%; 
     width: 80%; 
 }
 
