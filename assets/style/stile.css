@@ -140,4 +140,7 @@ body {
   .nav-links li a:hover {
     color: #ffffff;
   }
+  .contact-form {
+    margin-left: 0%;
+  }
 }
